@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio Nº 3</title>
+</head>
+
+<body>
+  <script>
+    /*
+      Escribe un programa para encontrar la suma de la serie 1+11+111+1111+...n. El
+      usuario debe ingresar un número donde n será menor a dicho número ingresado.
+      Ejemplo: Usuario ingresa 23540, luego la serie será 1+11+111+1111+11111 y el
+      resultado de la suma es 12345.
+    */
+
+    let num = 0, suma = 0, termino = 0;
+    let bandera = true;
+
+    num = prompt("Ingrese numero");
+
+    while (bandera) {
+      termino = termino * 10 + 1
+      if (termino > num) {
+        bandera = false
+      } else {
+        suma += termino;
+      }
+
+    }
+
+    console.log({suma})
+
+  </script>
+</body>
+
+</html>
