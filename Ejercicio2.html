@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <script>
+        let i = 1;
+
+        while (i === 1) {
+            let c = 1;
+            let adivino = 0; /*Bandera*/
+            let N = Number(prompt("Usuario 1: Ingrese un número entre 1 y 10:"));
+            // Condicion para ingresar bien los numeros del Jugador 1
+            while (N < 1 || N > 10) {
+                console.log("El numero ingresado no pertenece al rango de valores del juego. Ingrese Nuevamente.");
+                N = Number(prompt("Usuario 1: Ingrese un número entre 1 y 10:"));
+            }
+            while (c <= 3 && adivino === 0) {
+                let N2 = Number(prompt("Usuario 2: Ingrese un número. Intentos: " + c + " de 3: "));
+
+                if (N2 === N) {
+                    adivino = 1; //Bandera verdadera de ganador
+                } else {
+                    if (N2 > N) {
+                        console.log("El número ingresado " + N2 + " es mayor que el correcto");
+                    } else {
+                        console.log("El número ingresado " + N2 + " es menor que el correcto");
+                    }
+                    c++;
+                }
+            }
+            if (adivino === 1) {
+                console.log("¡Felicidades, adivinaste el número!" + N + " es el número ganador");
+            } else {
+                console.log("GAME OVER");
+            }
+            // Pregunta si desean jugar de nuevo
+            i = Number(prompt("Si desea jugar de nuevo ingrese 1, de lo contrario ingrese 0:"));
+
+        }
+    </script>
+</body>
+
+</html>

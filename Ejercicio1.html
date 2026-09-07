@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <script>
+        const dsem = 10080;
+        let semana = 0;
+
+        for (let i = 0; i < 15; i++) {
+            let num_min = Number(prompt("Ingrese numero expresado en minutos"));
+
+            if (num_min < 0) {
+                console.log("El numero ingresado es incorrecto, perdio una oportunidad");
+            } else {
+                semana = num_min / dsem;
+                console.log("El numero " + num_min + " equivale a " + semana.toFixed(2) + " semanas");
+            }
+        }
+    </script>
+</body>
+
+</html>
