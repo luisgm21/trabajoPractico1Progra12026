@@ -67,7 +67,7 @@
           <mxGeometry height="60" width="180" x="310" y="730" as="geometry" />
         </mxCell>
         <mxCell id="fin" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Fin" vertex="1">
-          <mxGeometry height="50" width="100" x="80" y="630" as="geometry" />
+          <mxGeometry height="50" width="100" x="95" y="635" as="geometry" />
         </mxCell>
         <mxCell id="UgHn9mr6b2YgSavZuHY3-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="NO" vertex="1">
           <mxGeometry height="30" width="60" x="180" y="400" as="geometry" />
@@ -93,8 +93,8 @@
         <mxCell id="Sx3REXynaOhfHL2MTB2E-3" edge="1" parent="1" source="Sx3REXynaOhfHL2MTB2E-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="fin" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Sx3REXynaOhfHL2MTB2E-2" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" value="Mostrar Suma" vertex="1">
-          <mxGeometry height="60" width="100" x="80" y="500" as="geometry" />
+        <mxCell id="Sx3REXynaOhfHL2MTB2E-2" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;" value="Mostrar num&lt;br&gt;Mostrar Suma" vertex="1">
+          <mxGeometry height="90" width="130" x="80" y="500" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
