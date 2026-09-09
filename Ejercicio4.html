@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        let opcionCasa = 0;
+        let opcionAccion = 0;
+
+        do {
+            opcionCasa = Number(prompt(
+                "Había una vez tres hermanos cerditos que vivían en el bosque. " +
+                "Como el malvado lobo los perseguía, decidieron construir casas.\n\n" +
+                "1. El más pequeño optó por utilizar paja para irse a jugar.\n" +
+                "2. El mediano prefirió construirla de madera.\n" +
+                "3. El mayor hizo una casa resistente con ladrillos.\n\n" +
+                "Elige a qué cerdito vas a seguir (1, 2 o 3):"
+            ));
+        } while (opcionCasa < 1 || opcionCasa > 3);
+
+        if (opcionCasa === 1) {
+            do {
+                opcionAccion = Number(prompt(
+                    "El lobo llegó, sopló y la casa de paja derribó. El cerdito sale corriendo asustado.\n" +
+                    "¿Qué decide hacer ahora?\n\n" +
+                    "1. Correr hacia la casa de madera de su hermano mediano.\n" +
+                    "2. Esconderse detrás de un arbusto gigante en el bosque."
+                ));
+            } while (opcionAccion < 1 || opcionAccion > 2);
+
+            if (opcionAccion === 1) {
+                console.log("Llegó a la casa de madera, pero el lobo también la derribó. ¡Tuvieron que huir a la casa de ladrillos para salvarse! Fin.");
+            } else {
+                console.log("Se escondió en el arbusto, pero el lobo tiene buen olfato y lo descubrió. Por suerte, escapó justo a tiempo a la casa de ladrillos. Fin.");
+            }
+
+        } else if (opcionCasa === 2) {
+            do {
+                opcionAccion = Number(prompt(
+                    "El lobo sopló con fuerza y la casa de madera colapsó.\n" +
+                    "El cerdito tiene que reaccionar rápido. ¿Qué hace?\n\n" +
+                    "1. Correr sin mirar atrás hacia la casa de ladrillos.\n" +
+                    "2. Lanzarle unas tablas de madera al lobo para distraerlo y luego huir."
+                ));
+            } while (opcionAccion < 1 || opcionAccion > 2);
+            if (opcionAccion === 1) {
+                console.log("Llegó justo a tiempo a la casa de ladrillos. El lobo sopló y sopló, pero no pudo derribarla. ¡Estaba a salvo! Fin.");
+            } else {
+                console.log("Las tablas distrajeron al lobo lo suficiente. El cerdito llegó a salvo con su hermano mayor y el lobo se rindió con un chichón en la cabeza. Fin.");
+            }
+
+        } else if (opcionCasa === 3) {
+            do {
+                opcionAccion = Number(prompt(
+                    "El lobo llegó, sopló con todas sus fuerzas, pero la casa ni se movió.\n" +
+                    "Furioso, el lobo decide trepar al techo para entrar por la chimenea.\n" +
+                    "¿Qué hace el cerdito mayor?\n\n" +
+                    "1. Encender una gran fogata con una olla de agua hirviendo.\n" +
+                    "2. Tapar la chimenea rápidamente con ladrillos y cemento."
+                ));
+            } while (opcionAccion < 1 || opcionAccion > 2);
+            if (opcionAccion === 1) {
+                console.log("¡El lobo bajó por la chimenea y se quemó la cola con el agua! Salió huyendo y nunca más volvió. ¡Los tres cerditos vivieron felices! Fin.");
+            } else {
+                console.log("El lobo se quedó atascado intentando bajar por la chimenea tapada. ¡Al final tuvo que pedir ayuda y prometer no molestarlos más! Fin.");
+            }
+        }
+    </script>
+</body>
+</html>
