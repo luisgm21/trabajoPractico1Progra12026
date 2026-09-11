@@ -10,17 +10,26 @@
 <body>
     <script>
         const dsem = 10080;
-        let semana = 0;
 
         for (let i = 0; i < 15; i++) {
-            let num_min = Number(prompt("Ingrese numero expresado en minutos"));
+            let num_min = Number(
+                prompt("Ingrese el número " + (i + 1) + " de 15, expresado en minutos:")
+            );
 
-            if (num_min < 0) {
-                console.log("El numero ingresado es incorrecto, perdio una oportunidad");
-            } else {
-                semana = num_min / dsem;
-                console.log("El numero " + num_min + " equivale a " + semana.toFixed(2) + " semanas");
+            while (num_min < 0) {
+                alert("El numero ingresado es incorrecto, ingreselo nuevamente");
+                num_min = Number (prompt("Ingrese el número " + (i + 1) + " de 15:"
+                )
+            );
+        
             }
+            let semana = num_min / 10080;
+
+            document.write (
+                "el numero " + num_min +
+                " equivale a " + semana.toFixed(2) +
+                " semanas.<br>"
+            );
         }
     </script>
 </body>
